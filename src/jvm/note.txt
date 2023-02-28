@@ -1,0 +1,29 @@
+ClassLoader Sub System:
+ClassLoader Sub System is Responsible for the following 3 Activities.
+1) Loading
+2) Linking
+ Verification
+ Preparation
+ Resolution
+3) Initialization
+1) Loading:
+ Loading Means Reading Class Files and Store Corresponding Binary Data in Method Area.
+ For Each Class File JVM will Store the following Information in Method Area.
+1) Fully Qualified Name of the Loaded Class OR Interface ORenum.
+2) Fully Qualified Name of its Immediate Parent Class.
+3) Whether .class File is related to Class OR Interface OR enum.
+4) The Modifiers Information
+5) Variables OR Fields Information
+6) Methods Information
+7) Constant Pool Information and so on.
+
+
+ After loading .class File Immediately JVM will Create an Object of the Type class Class to
+Represent Class Level Binary Information on the Heap Memory
+
+The Class class Object can be used by Programmer to get Class Level Information Like Fully
+Qualified Name of the Class, Parent Name, Methods and Variables Information Etc.
+
+
+Note: For Every loaded .class file Only One Class Object will be Created, even though we are
+using Class Multiple Times in Our Application
